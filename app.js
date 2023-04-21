@@ -8,7 +8,10 @@ let mainWindow;
 let todos = []
 
 app.on('ready', ()=>{
-    mainWindow = new BrowserWindow({})
+    mainWindow = new BrowserWindow({
+        width: 800,
+        height: 550
+    })
     mainWindow.loadURL(url.format({
         pathname: path.join(__dirname, "pages/mainWindow.html"),
         protocol: "file:",
