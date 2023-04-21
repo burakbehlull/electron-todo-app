@@ -1,0 +1,25 @@
+{
+  "name": "electron-todo-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start":"electron ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iambuvak/electron-todo-app.git"
+  },
+  "keywords": [],
+  "author": "Burak A. <burakyabgu@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "electron": "^4.1.0"
+  },
+  "bugs": {
+    "url": "https://github.com/iambuvak/electron-todo-app/issues"
+  },
+  "homepage": "https://github.com/iambuvak/electron-todo-app#readme"
+
+
+}
