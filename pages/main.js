@@ -11,7 +11,7 @@ ipcRenderer.on('todoItems', (err, todo)=>{
     let todoElement = document.createElement('li') 
     todoElement.innerHTML = todo.text
     const todos = document.getElementById('todos')
-    .appendChild(todoElement)
+    todos.appendChild(todoElement)
 })
 
 
