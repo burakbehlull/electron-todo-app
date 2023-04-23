@@ -56,4 +56,8 @@ body {
 }
 .container ul li:nth-child(1) {
   padding-top: 15px;
+}
+.container ul li button {
+  padding: 5px 5px;
+  margin-left: 15px;
 }/*# sourceMappingURL=style.css.map */
