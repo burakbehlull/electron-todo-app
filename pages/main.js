@@ -8,6 +8,13 @@ addTodo.addEventListener('click', ()=>{
     todoValue.value = "";
 })
 
+todoValue.addEventListener('keypress', (e)=>{
+    if(e.key == 'Enter'){
+        ipcRenderer.send('newTodo', todoValue.value)
+        todoValue.value = "";
+    }
+})
+
 ipcRenderer.on('todoItems', (err, todo)=>{
 
     let todoElement = document.createElement('li') 
@@ -33,7 +40,7 @@ ipcRenderer.on('todoItems', (err, todo)=>{
 
 const counterFunc = () => {
     let getCounter = document.getElementById('todoValue')
-    getCoutner.placeholder = `Toplam Todo: ${todos.children.length}`
+    getCounter.placeholder = `Toplam Todo: ${todos.children.length}`
 }
 
 
