@@ -34,13 +34,11 @@ ipcRenderer.on('todoItems', (err, todo)=>{
             counterFunc()
         }
     })
-    
-    
 })
 
 const counterFunc = () => {
-    let getCounter = document.getElementById('todoValue')
-    getCounter.placeholder = `Toplam Todo: ${todos.children.length}`
+    let getCounter = document.getElementById('todoCounter')
+    getCounter.innerText = `Toplam Todo: ${todos.children.length}`
 }
 
 

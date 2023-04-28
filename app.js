@@ -9,6 +9,7 @@ let todos = []
 
 app.on('ready', ()=>{
     mainWindow = new BrowserWindow({
+		frame: false,
         width: 800,
         height: 550
     })
@@ -17,6 +18,8 @@ app.on('ready', ()=>{
         protocol: "file:",
         slashes: true
     }))
+
+    mainWindow.setResizable(false)
 
     ipcMain.on('newTodo', (err, data)=>{
         if(data){
@@ -29,7 +32,6 @@ app.on('ready', ()=>{
             mainWindow.webContents.send('todoItems', todo)
         }
     })
-
 })
 
 

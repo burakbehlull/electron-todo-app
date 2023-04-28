@@ -18,14 +18,38 @@ body {
   align-items: center;
   flex-direction: column;
 }
+.container .draggable {
+  background-color: rgb(238, 47, 47);
+  width: 100%;
+  -webkit-user-select: none;
+  -webkit-app-region: drag;
+}
+.container .draggable ul {
+  display: flex;
+  justify-items: center;
+  justify-content: space-between;
+  font-size: small;
+  max-width: 100%;
+  padding: 10px 30px;
+}
+.container .draggable ul li {
+  color: #fff;
+  padding-top: 0px;
+}
+.container .draggable ul li:nth-child(1) {
+  padding-top: 0px;
+}
+.container .draggable ul li:nth-child(2) {
+  padding-right: 60px;
+}
 .container h1 {
   padding-top: 2em;
 }
 .container input {
   margin-top: 25px;
   padding: 10px;
-  color: black;
-  border: 1px solid black;
+  color: #000;
+  border: 1px solid #000;
   border-radius: 5px;
   font-size: 17px;
   outline: 0;
